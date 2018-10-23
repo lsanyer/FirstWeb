@@ -27,10 +27,9 @@
     <tr>
         <td><input type="submit" value="登录" /></td>
         <td><input type="reset" value="重置" /></td>
+        <td><a href="reg.jsp"><input type = "button" value = "注册"></a></td>
     </tr>
-    </div>
-</table>
-
-
+    </table>
+  </div>
 </body>
 </html>
