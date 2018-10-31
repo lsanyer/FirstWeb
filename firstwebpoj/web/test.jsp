@@ -9,14 +9,14 @@
 <html>
 <head>
     <title>菜鸟教程</title>
-    <form action="main.jsp" method="POST">
-        站点名: <input type="text" name="name">
-        <br />
-        网址: <input type="text" name="url" />
-        <input type="submit" value="提交" />
-    </form>
 </head>
 <body>
-
+<form action="main.jsp" method="POST" target="_blank">
+    <input type="checkbox" name="google" checked="checked" /> Google
+    <input type="checkbox" name="runoob"  /> 菜鸟教程
+    <input type="checkbox" name="taobao" checked="checked" />
+    淘宝
+    <input type="submit" value="选择网站" />
+</form>
 </body>
 </html>

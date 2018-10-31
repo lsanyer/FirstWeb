@@ -12,6 +12,7 @@
 </head>
 <body>
 <div>
+    <form action = "regresult.jsp" method = "POST">
     <table>
         <tr>
             <td>请输入用户名：</td>
@@ -28,6 +29,7 @@
     </table>
     <input type="submit" value="注册" />
     <input type="reset" value="重置" />
+    </form>>
 </div>
 </body>
 </html>

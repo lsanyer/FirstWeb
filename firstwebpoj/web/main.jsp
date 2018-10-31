@@ -7,15 +7,21 @@
     <meta charset="utf-8">
     <title>菜鸟教程(runoob.com)</title>
 </head>
-<body>
-<h1>使用 GET 方法读取数据</h1>
-<ul>
-    <li><p><b>站点名:</b>
-        <%= request.getParameter("name")%>
-    </p></li>
-    <li><p><b>网址:</b>
-        <%= request.getParameter("url")%>
-    </p></li>
-</ul>
+<h1>读取所有表单参数</h1>
+<table width="100%" border="1" align="center">
+    <tr bgcolor="#949494">
+        <th>参数名</th><th>参数值</th>
+    </tr>
+    <%
+        Enumeration paramNames = request.getParameterNames();
+
+        while(paramNames.hasMoreElements()) {
+            String paramName = (String)paramNames.nextElement();
+            out.print("<tr><td>" + paramName + "</td>\n");
+            String paramValue = request.getParameter(paramName);
+            out.println("<td> " + paramValue + "</td></tr>\n");
+        }
+    %>
+</table>
 </body>
 </html>
